@@ -1,0 +1,112 @@
+header{
+    display: flex;
+    justify-content: center;
+}
+header nav{
+    /* background-color: #666; */
+    justify-content: center;
+    height: 2.7em;
+    border-radius: 1em;
+    /* position: fixed; */ /* Si on veut la laisser en haut de la page ! */ 
+    width: 100%;
+    top: 0;
+    margin-bottom: -5em; /* permet juste de coller l'image au top */
+}
+
+/* a modifier parce que c'est déguelasse ! */
+header .brand-logo{
+    padding: 0.2em 0em 0em 0.2em;
+    font-size: 6vw;
+    color: white;
+    text-decoration: none; /* pour qu'il ne soit pas souligné  */
+    vertical-align: middle;
+    font-weight: bold;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    float:right;
+}
+header li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+    padding: 0.2em 0.2em 0em 0em;
+    text-decoration: none;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+header li a:hover {
+    /* background-color: #111; */
+    font-weight: bold;
+}
+
+
+
+/* ------------------Profile page--------------------------- */
+
+.profile-page{
+    width:100%; 
+    background-image: url("../images/valdivia/sunset.jpg"); 
+    background-size:cover; 
+    background-position: center center; 
+}
+
+.profile-page .content-center{
+    text-align:center;
+    top: 0;
+}
+
+.profile-page p{
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.cc-profile-image{
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+.cc-profile-image a {
+    position: relative; }
+.cc-profile-image img {
+    position: relative;
+    border-radius: 50%;
+    height: 16em;
+    width: 16em;
+    border: 15px solid transparent;
+    z-index: 9999;
+    transition: all .3s ease-out; }
+.cc-profile-image a:hover img {
+    transform: scale(1.16, 1.16); }
+
+
+
+/* -----------------Table of contents------------------------ */
+/* https://css-tricks.com/a-perfect-table-of-contents-with-html-css/ */
+.table_of_contents {
+    padding: 0;
+    /* margin-bottom: 5em; */
+}
+.table_of_contents p{
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.table_of_contents li{
+    color: rgba(0, 13, 189, 1);
+    margin: 1em;
+}
+.table_of_contents a{
+    color: rgba(0, 13, 189, 1);
+}
+.table_of_contents a:hover{
+    font-weight: bold;
+}

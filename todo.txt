@@ -1,0 +1,7 @@
+Ecrire anecdotes 
+Ecrire comida 
+
+santiago_2 : changer la table des matières
+Passer à du jsx pour automatiser un peu les choes:
+- tenter de créer des mosaïques plus faciles à utiliser
+- terminer de changer les contenidos en jsx

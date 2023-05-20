@@ -1,0 +1,88 @@
+#word_cloud {
+    /* center content */
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 4vw;
+    /* grid */
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5vw;
+    grid-template:
+    'la_wea_wena la_wea_wena la_wea_wena la_wea_wena la_wea_wena la_wea_wena la_wea_wena la_wea_wena'
+    'altiro altiro       .      .     lata   huevon hasta_el_pico hasta_el_pico'
+    'palla muy_bien_po   cachai  cachai     lata   huevon chucha               .'
+    'chorro     .      si_po que_fome bacan    .    chucha        conchetumadre'
+    'paja     curao      si_po   que_fome cabro    .    chucha        conchetumadre'
+    'caleta   caleta   raja     .     carete carete    .          conchetumadre'
+    'wea     brigido  brigido brigido   .      .       .          conchetumadre';
+}
+/* base font color for all words */
+#word_cloud > div {
+    color: #022f40;
+    text-shadow: 0.3vw 0.5vw 1vw rgba(1, 1, 1, 0.3);
+}
+/* twice the size, bold and different color for each second word */
+#word_cloud :nth-child(2n) {
+    font-size: 4vw;
+    color: #2689a1;
+    font-weight: bold;
+}
+/* vertical orientation and different color for each third word */
+#word_cloud :nth-child(3n) {
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    color: #0090c1;
+}
+/* triple size and different color for each fourth word */
+#word_cloud :nth-child(4n) {
+    font-size: 6vw;
+    color: #183446;
+}
+/* quadruple size and different color for each fifth word */
+#word_cloud :nth-child(5n) {
+    font-size: 8vw;
+    color: #046e8f;
+}
+
+
+#bacan {    grid-area: bacan;}
+#wea {    grid-area: wea;}
+#si_po {    grid-area: si_po;}
+#caleta {    grid-area: caleta;}
+#lata {    grid-area: lata;}
+#que_fome {    grid-area: que_fome;}
+#hasta_el_pico {    grid-area: hasta_el_pico;}
+#la_wea_wena {    grid-area: la_wea_wena;}
+#huevon {    grid-area: huevon;}
+#brigido {    grid-area: brigido;}
+#muy_bien_po {    grid-area: muy_bien_po;}
+#chucha {    grid-area: chucha;}
+#raja {    grid-area: raja;}
+#altiro {    grid-area: altiro;}
+#palla {    grid-area: palla;}
+#cabro {    grid-area: cabro;}
+#chorro {    grid-area: chorro;}
+#conchetumadre {    grid-area: conchetumadre;}
+#paja {    grid-area: paja;}
+#carete {    grid-area: carete;}
+#curao {    grid-area: curao;}
+#cachai {    grid-area: cachai;}
+
+#intro a:link {
+    color: rgba(0, 13, 189, 1);
+}
+#intro a:hover {
+    font-weight: bold;
+}
+#intro a:visited {
+    color: rgba(0, 13, 189, 1);
+}
+
+.word{
+    font-weight: bold;
+}

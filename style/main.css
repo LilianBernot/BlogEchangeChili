@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(174, 174, 174);
+    font-family: "montserrat-bold", sans-serif;
+}
+
+.big_step p{
+    text-align: justify;
+}
+
+.step{
+    display: block;
+}
+
+h1, h2{
+    color: black;
+    text-align: center;
+}
+
+/* Magique : https://juliencrego.com/astuces/numerotation-automatique-des-titres-en-css/ */
+body {
+    /* On initialise deux compteurs */     
+        counter-reset: h1 h2 ; 
+    } 
+h1:before {     
+    /* content: counter(h1) "  " ;      */
+    counter-increment: h1 ; 
+} 
+h2:before {     
+    /* On insére la numérotation sur deux niveaux */     
+    /* content: counter(h1) "." counter(h2) "  " ;      */
+    content: counter(h2) "  " ;
+    counter-increment: h2 ; 
+} 
+h1 {
+    /* On réinitialise le compteur pour le niveau deux à chaque titre de niveau 1 */
+    counter-reset: h2;
+}
+
+h3{
+    text-align: center;
+}
+
+footer{
+    text-align : center;
+    font-weight: bold;
+}
+
+.ligne{
+    display:table-row;
+}
+/* .ligne:after{
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.left_70, .right_70, .left_30, .right_30 {
+    display: inline-block; /* Plutôt que float, sinon on ne peut pas écrire au milieu */
+    /* float: left; */
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.left_70, .right_70{
+    width: 65%;  
+}
+.left_30, .right_30{
+    width:35%;
+}
+
+.experience:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.table_of_contents{
+    font-size: 1.5em;
+}
+
+.step_title{
+    border-bottom: solid black 0.1em;
+}
+.step_title h2{
+    margin-bottom: 0;
+}
+
+
+/* On pourrait faire un tableau de photos avec un grid ! */
+/* https://codepen.io/radek024/pen/WdRVwJ */

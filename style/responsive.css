@@ -1,0 +1,39 @@
+@media screen and (min-width: 1080px) {
+    body{
+        width: 1080px;
+        margin: auto;
+    }
+    header .brand-logo{
+        font-size: 64.8px;
+    }
+    header li a{
+        font-size: 43.2px;
+    }
+}
+
+/* @media screen and (max-width: 1080px) {
+    body p{
+        font-size: 2vw;
+    }
+    .ligne .left_70 p{
+        font-size: 5vw;
+    }
+    .ligne .right_70 p{
+        font-size: 5vw;
+    }
+    .ligne .left_30 p{
+        font-size: 5vw;
+    }
+    .ligne .right_30 p{
+        font-size: 5vw;
+    }
+} */
+
+@media screen and (max-width: 1080px) {
+    .ligne .left_70, .right_70, .left_30,.right_30 {
+        width: 100%;
+    }
+    body p{
+        padding: 20px;
+    }
+}
